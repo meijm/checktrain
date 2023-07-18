@@ -1,0 +1,13 @@
+curl -H "Authorization: hmp_ad44498e3ace3623d2470dd23dc87968a46490ac1ef4c8fe4c8f3fd922eb20ea" https://api.hamibot.com/
+
+curl -H "Authorization: hmp_ad44498e3ace3623d2470dd23dc87968a46490ac1ef4c8fe4c8f3fd922eb20ea" https://api.hamibot.com/v1/robots/6422727713ed6c685f201db6
+
+// hmp_... 需要替换成自己的
+// _id 和 hmp_... 需要替换成自己的
+var res = http.request('https://api.hamibot.com/v1/robots/6422727713ed6c685f201db6', {
+  method: 'GET',
+  headers: {
+    authorization: 'hmp_ad44498e3ace3623d2470dd23dc87968a46490ac1ef4c8fe4c8f3fd922eb20ea',
+  },
+});
+log(res.body.json());
